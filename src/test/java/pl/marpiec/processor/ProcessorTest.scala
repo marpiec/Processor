@@ -3,14 +3,14 @@ package pl.marpiec.processor
 
 class TestScript extends Script {
 
-  def a = /{ 2        }("a")
-  def b = /{ 3        }("b")
-  def c = /{ a + b    }("c")
-  def d = /{ 5        }("d")
-  def e = /{ c + d    }("e")
-  def f = /{ 5        }("f")
-  def g = /{ c + e    }("g")
-  def h = /{ g + f    }("h")
+  def a = /("a"){  2        }
+  def b = /("b"){  3        }
+  def c = /("c"){  a + b    }
+  def d = /("d"){  5        }
+  def e = /("e"){  c + d    }
+  def f = /("f"){  5        }
+  def g = /("g"){  c + e    }
+  def h = /("h"){  g + f    }
 
 }
 

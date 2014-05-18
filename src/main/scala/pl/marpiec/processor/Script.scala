@@ -4,7 +4,7 @@ abstract class Script {
 
   private val processor = new Processor
 
-  def /[T](block: => T)(identifier: String):T = {
+  def /[T](identifier: String)(block: => T):T = {
     processor./(block)(identifier)
   }
 
